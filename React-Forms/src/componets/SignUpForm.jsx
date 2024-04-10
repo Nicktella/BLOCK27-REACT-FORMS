@@ -1,6 +1,7 @@
 // SignUpForm.jsx
 import { useState } from "react";
 
+
 export default function SignUpForm({ setToken }) {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
@@ -28,6 +29,7 @@ export default function SignUpForm({ setToken }) {
 
     return (
         <div className="form-container">
+             <h1>React Forms</h1>
             <h2>Sign Up</h2>
             {error && <p className="error-message">{error}</p>}
 
